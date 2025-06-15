@@ -5,107 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindWell</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background: #4682B4;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
             padding: 20px;
+            background-color: #f8f6f3;
+            color: #2c2c2c;
         }
-
-        .header {
-            color: white;
-            font-size: 3.5em;
-            font-weight: 300;
-            margin-bottom: 50px;
-            text-align: center;
-            letter-spacing: 2px;
-        }
-
-        .content-container {
-            background: white;
+        .container {
             max-width: 800px;
-            padding: 60px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            line-height: 1.8;
-            color: #333;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-
-        .content-container h2 {
-            color: #2c3e50;
-            font-size: 2.2em;
-            margin-bottom: 30px;
+        h1 {
+            color: #8B4513;
             text-align: center;
-            font-weight: 400;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #D2691E;
+            padding-bottom: 10px;
         }
-
-        .content-container p {
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
             font-size: 1.1em;
-            margin-bottom: 25px;
-            text-align: justify;
-            color: #444;
         }
-
-        .content-container p:first-of-type::first-letter {
-            font-size: 3.5em;
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #A0522D;
+            border-left: 4px solid #D2691E;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #faf9f7;
+            border-left: 3px solid #D2691E;
+        }
+        .menu-item h3 {
+            color: #8B4513;
+            margin-bottom: 5px;
+        }
+        .price {
             font-weight: bold;
-            float: left;
-            line-height: 1;
-            margin: 0 8px 0 0;
-            color: #4682B4;
+            color: #A0522D;
+            float: right;
         }
-
-        @media (max-width: 768px) {
-            .header {
-                font-size: 2.5em;
-                margin-bottom: 30px;
-            }
-            
-            .content-container {
-                padding: 40px 30px;
-            }
-            
-            .content-container h2 {
-                font-size: 1.8em;
-            }
-            
-            .content-container p {
-                font-size: 1em;
-            }
+        .description {
+            font-style: italic;
+            color: #555;
+            clear: both;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #777;
+        }
+        .hours {
+            background-color: #f0ede8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1 class="header">MindWell</h1>
-    
-    <div class="content-container">
-        <h2>The Art of Culinary Excellence</h2>
+    <div class="container">
+        <h1>MindWell</h1>
+        <div class="subtitle">Artisanal Dining Experience</div>
         
-        <p>In the realm of gastronomy, where passion meets precision and creativity dances with tradition, there exists a sublime art form that transcends mere sustenance. Fine dining represents humanity's most sophisticated expression of cultural refinement, where each dish becomes a canvas upon which master chefs paint with flavors, textures, and presentations that elevate the dining experience to theatrical heights.</p>
+        <div class="section">
+            <p>Impact-Site-Verification: 2e99dc3d-89c9-430e-829f-fc9e1e8ad74e</p>
+            
+            <p>Welcome to MindWell, where culinary artistry meets mindful dining. Our carefully curated menu celebrates the intersection of traditional techniques and contemporary innovation, offering an intimate dining experience that nourishes both body and soul.</p>
+            
+            <p>Each dish is thoughtfully crafted using locally-sourced, seasonal ingredients, creating a harmony of flavors that reflects our commitment to sustainable and conscious cuisine. Our intimate 28-seat dining room provides the perfect setting for memorable culinary journeys.</p>
+        </div>
 
-        <p>The journey begins long before the first course arrives at your table. In the kitchen's orchestrated chaos, ingredients are selected with the discerning eye of a jeweler choosing precious stones. Seasonal vegetables, harvested at peak ripeness, undergo transformations that would astound their humble garden origins. A simple carrot, through the alchemy of technique and vision, emerges as a work of art—perhaps turned into delicate ribbons that curl like autumn leaves, or pureed into a vibrant essence that captures the very soul of earth and sun.</p>
+        <div class="section">
+            <h2>Tasting Menu</h2>
+            <div class="menu-item">
+                <h3>Amuse-Bouche Selection</h3>
+                <span class="price">Included</span>
+                <div class="description">Three carefully composed bites featuring seasonal micro-ingredients and house-made accompaniments</div>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Garden Meditation</h3>
+                <span class="price">$28</span>
+                <div class="description">Heirloom vegetables, edible flowers, herb-infused olive oil, and aged balsamic pearls</div>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Ocean's Whisper</h3>
+                <span class="price">$42</span>
+                <div class="description">Day-boat scallops, cauliflower purée, crispy pancetta, and micro greens</div>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Forest Floor</h3>
+                <span class="price">$45</span>
+                <div class="description">Wild mushroom medley, truffle essence, roasted garlic, and fresh thyme</div>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Heritage Harvest</h3>
+                <span class="price">$52</span>
+                <div class="description">Grass-fed beef tenderloin, roasted root vegetables, red wine reduction, and rosemary oil</div>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Sweet Contemplation</h3>
+                <span class="price">$18</span>
+                <div class="description">Dark chocolate tart, seasonal berry compote, and vanilla bean crème</div>
+            </div>
+        </div>
 
-        <p>Consider the symphony of a seven-course tasting menu, where each movement builds upon the last in carefully calculated crescendos of flavor. The amuse-bouche arrives like a gentle overture, a single perfect bite that awakens the palate and sets expectations soaring. Perhaps it's a sphere of liquid nitrogen-frozen olive oil that bursts on the tongue, releasing Mediterranean sunshine in an explosion of herbaceous delight, or a miniature composition of duck liver mousse crowned with gold leaf, speaking to both decadence and restraint.</p>
+        <div class="section">
+            <h2>Beverage Pairings</h2>
+            <div class="menu-item">
+                <h3>Curated Wine Experience</h3>
+                <span class="price">$65</span>
+                <div class="description">Five carefully selected wines paired with each course, featuring both established and emerging vintners</div>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Artisanal Tea Journey</h3>
+                <span class="price">$35</span>
+                <div class="description">A progression of premium teas, each selected to complement the flavors of your dining experience</div>
+            </div>
+        </div>
 
-        <p>The progression continues with seafood preparations that honor the ocean's bounty—wild-caught John Dory, its flesh so pristine it seems to glow with inner light, paired with a foam infused with sea salt and kelp, creating the illusion of dining beneath gentle waves. The chef's knife work becomes poetry in motion, each cut deliberate and reverent, transforming raw ingredients into geometric perfection that pleases the eye before enchanting the palate.</p>
+        <div class="section">
+            <h2>Private Dining</h2>
+            <p>MindWell offers exclusive private dining experiences for intimate gatherings of 6-12 guests. Our chef will work with you to create a personalized menu that reflects your preferences and dietary requirements.</p>
+            
+            <p>Advance reservations required. Please contact us at least two weeks prior to your desired date to discuss menu options and availability.</p>
+        </div>
 
-        <p>Wine pairings elevate these moments to transcendent heights, where sommelier expertise creates liquid bridges between courses. A crisp Chablis might accompany the opening seafood, its mineral notes echoing the brine of ancient seabeds, while a full-bodied Burgundy waits patiently for the arrival of perfectly aged beef, its tannins promising to unlock hidden depths of flavor that marry beautifully with the meat's rich complexity.</p>
+        <div class="hours">
+            <h2>Hours & Reservations</h2>
+            <p><strong>Dinner Service:</strong><br>
+            Tuesday - Thursday: 6:00 PM - 9:30 PM<br>
+            Friday - Saturday: 6:00 PM - 10:00 PM<br>
+            Sunday: 5:30 PM - 9:00 PM<br>
+            Closed Mondays</p>
+            
+            <p><strong>Reservations strongly recommended</strong><br>
+            Call: (555) MINDWELL<br>
+            Email: reservations@mindwell-dining.com</p>
+        </div>
 
-        <p>Service in these temples of cuisine becomes an art form unto itself, where staff move with balletic precision, appearing precisely when needed and vanishing discretely when conversation demands privacy. Water glasses never empty, bread plates remain perfectly aligned, and each course arrives at optimal temperature, the timing orchestrated with Swiss precision to ensure that hot dishes steam with aromatic invitation while cold preparations maintain their refreshing vitality.</p>
-
-        <p>The final course—dessert—often provides the evening's most playful moment, where sugar transforms into architectural marvels that challenge perception. Chocolate constructions that appear gravity-defying house delicate fruit sorbets, while spun sugar creations dissolve on the tongue like sweet memories, leaving behind flavors that linger long after the last bite has been savored.</p>
-
-        <p>This is the magic of fine dining: the transformation of eating from biological necessity into cultural celebration, where every element—from the weight of the silverware to the fold of the napkin—contributes to an experience that nourishes not just the body, but the soul itself.</p>
+        <div class="footer">
+            <p>&copy; 2024 MindWell. All rights reserved.</p>
+            <p>123 Artisan Lane, Culinary District</p>
+        </div>
     </div>
 </body>
 </html>
